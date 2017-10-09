@@ -38,6 +38,10 @@ h1 {
   font-size: 14px;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .keys {
   width: 41px;
   height: 35px;
