@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+button:focus {
+  outline: 0;
+}
+
 h1 {
   font-family: 'Courier';
   color: white;
@@ -36,10 +40,6 @@ h1 {
   text-align: right;
   font-weight: bold;
   font-size: 14px;
-}
-
-button:focus {
-  outline: 0;
 }
 
 .keys {
