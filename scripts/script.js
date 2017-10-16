@@ -1,12 +1,19 @@
-var box = document.getElementById('display');
+var show = document.getElementById('display');
+var entry = "";
 
 function toScreen(x) {
-  box.value += x;
   if (x === 'c') {
-    box.value = '';
+    show.value = '';
+    entry = '';
+  } else if (x === '*' || x === '/' || x === '+' || x === '-') {
+    show.value = '';
+    entry += x;
+  } else {
+    show.value += x;
+    entry += x;
   }
 }
 
 function equal() {
-  box.value = eval(box.value);
+  show.value = eval(entry);
 }
